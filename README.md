@@ -74,6 +74,7 @@ This is the current progress for these policies as at 26/07/22.
 
 However, these are a number of issues and features that are probably required for policies, we will work with IWA/Hedera on meeting compliance.
 
+- Update the tags to be inline with the vernacular of the IWA (remove the concept of "create_farm" or "issues")
 - Ensure that the full trust chain is signed off upon.
 - Add a block after the minting step to show an instance of a CCP token
 - Additional MRV elements for iOT/Satelite measurements (with a default authority for minting)
