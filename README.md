@@ -55,7 +55,11 @@ We focus on using these structures:
 - EP's (the project as they refer to projects with carbon removals)
 - CCP (Tokens that are fungible in nature, and thus divisible for potential micro offsetting at a sub-kg scale)
 
+Eventually the aim is to map our processes to the IWA lifecycle, see below, but With additional capabilities to swap or insert specific schemas at different stages.
 
+![image info](./specifications/imgs/iwa-lifecycle.png)
+
+In order to facilitate this we may require a smart contract capability when it comes to the retirement of credits, but this is to be decided and discussed.
 
 ## Current Progress and Needed Features
 
