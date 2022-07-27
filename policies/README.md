@@ -66,10 +66,10 @@ There are no strict definitions for scale in terms of the IWA, All they supply w
 
 Internally let's use these definitions for now, For onboarded projects pre-addition.
 
-MICRO: < 10 tonnes of CO2e
-SMALL: < 100 tonnes of CO2e
-MEDIUM: <= 1000 tonnes of CO2e
-LARGE: > 1000 tonnes of CO2e 
+- MICRO: < 10 tonnes of CO2e
+- SMALL: < 100 tonnes of CO2e
+- MEDIUM: <= 1000 tonnes of CO2e
+- LARGE: > 1000 tonnes of CO2e 
 
 ### Modular Benefit Projects ("MBP")
 
