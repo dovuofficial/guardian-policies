@@ -19,6 +19,8 @@ This folder is all about what specifications we are attempting to align to in or
 
 You can expect to see all raw documentation as well as proto files of particular specifications for the entities we are working with.
 
+Our primary source of truth is from this document released in 2021, of the [IWA voluntary ecological markets overview](https://interwork.org/wp-content/uploads/2021/05/Voluntary_Ecological_Markets_Overview_Revised.pdf), although We will use updated versions of the documentation as and when they are released through the IWA.
+
 ## Policies
 
 This folder focuses on our implementation of policies that attempts to meet the specific specifications, They will be broken down into subfolders to focus on each particular policy. You may see examples of Jason, as well as recommendations on how to process each step (especially document block submissions) in the policy.
