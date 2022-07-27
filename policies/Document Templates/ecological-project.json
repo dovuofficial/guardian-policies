@@ -1,0 +1,26 @@
+{
+  "document": {
+    "field0": "1234",
+    "field1": "Matt's Farm",
+    "field2": "This is a description about Matt's farm",
+    "field3": "Matt Smithies",
+    "field4": {
+      "field0": "dovu.io",
+      "field1": "England",
+      "field2": "Micro"
+    },
+    "field5": {
+      "field0": "Same as above (field0 - Unique Identifier)",
+      "field1": "GeoJSON needed",
+      "field2": "Sequestion",
+      "field3": "Carbon Removal",
+      "field4": "N/A",
+      "field5": "N/A",
+      "field6": 0,
+      "field7": "N/A",
+      "field8": "Matt Smithies",
+      "field9": "DOVU",
+      "field10": "100"
+    }
+  }
+}
