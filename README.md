@@ -69,20 +69,20 @@ Below is a simple flow of the DOVU onboarding to minting of carbon credits.
 
 ```mermaid
 graph TD
-    A[Owner] -->|Submits Project| B(Onboarding)
-    B --> |Verifier Assigned| A1{Is project valid}
+    K--> B(Carbon Project Onboarding) --> A1{Project Validation}
     A1 -->|approved| C{Calculation MRV}
     A1 -->|denied| B1(Application Rejected)
-    C --> E[Cool Farm Tool]
-    C --> D[Agrecalc]
-    C --> F[Geotree]
+    C --> E[Policy Providers]
+    C --> D[3rd Party Data Providers]
+    C --> F[Independent Verifiers]
     F --> G[Carbon Token Minting]
     E --> G
     D --> G
-    G --> |Purchasable| H{Marketplace}
+    G --> |Uploaded| H{Marketplace}
     H --> |purchase retirement| I[Certificate Generated]
     H --> |purchase token| J[Transfer Tokenised Carbon]
-    J --> |retire carbon from token| I
+    J --> |optional: retire carbon from token| I
+    H --> |On Payment| K[Project Owner]
 ```
 
 ## Current Progress and Needed Features
