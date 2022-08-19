@@ -85,6 +85,64 @@ graph TD
     H --> |On Payment| K[Project Owner]
 ```
 
+## Overview of the guardian account flow and relationships
+
+Below is the flow of how different guardian accounts come to gather to mint a token to create the trust chain.
+
+```mermaid
+graph TD
+    A[DOVU Admin - Through Nova] -->|Assigned Once| B[Guardian Account - Standard Registry]
+    A2[User/Farmer/Project] -->|Assigned| B2[Guardian Account - Registrant] 
+    A3[Verifier] --> |Assigned| B3[Guardian Account - Verifier]
+    B2 -->|submit| C1[DOVU Application - Farm]
+    B -->|Check through admin panel| C1
+    C1 -->|Send to guardian| D(Approve Document)
+    D -->|Send to guardian| E(Ecological Project)
+    B2 -->|Submit| E
+    B -->|Approve| E
+    E -->|Send to guardian| F(Approve Document)
+    F -->|Send to guardian| G(MRV Submissions)
+    B2 -->|Submit| G
+    B3 -->|Approve| G
+    H1(Agrecalc) -->|One of| G
+    H2(Cool Farm) -->|One of| G
+    G -->|Trustchain complete| J(Minted tokens) 
+```
+
+## Marketplace data structure flows
+
+Below is a data architecture of how DOVU's marketplace interacts with the Guardian
+
+```mermaid
+graph TD
+    A[User] -->|References| B[Guardian Account]
+    B --> |has role| B2[Guardian Roles]
+    B2 -->|one of| B3[Admin - SR] 
+    B2 -->|one of| B4[Registrant] 
+    B2 -->|one of| B5[Verifier] 
+    D2[Cool Farm] -->|One of| C1
+    D1[Agrecalc] -->|One of| C1
+    C(Base Policy) --> |Policy Variation| C1[MRV Type - Contract Class] 
+    C -->|Inherits| E[Project Policy: an instance of a base policy variant]
+    E1[Guardian UI - External] -->|Import, publish, extract id| F1
+    F2[Base Policy id] --> E
+    F1[Policy Reference] --> E
+    F2 -->|foreign id| C
+    E -->|submitter_guardian_account_id| B
+    E -->|farm_id| EXT1[Farm]
+    E -->|project_id| EXT2[Project]
+    H[Nova Admin] -->|Triggers Jobs| G
+    E -->|Ongoing Tasks| G[Guardian Tasks/Jobs]
+    H --> J[Initial Application Submission] -->|on success| J3(Application Approval)
+    H --> J2[Ecological Project Submission] -->|on success| J4(Ecological Project Approval)
+    H --> J5[MRV Submission] -->|on success| J6(MRV Approval)
+    G -->|Store/log tasks| L(Policy Submissions)
+    L -->|Guardian Task Type| M[ApplicationDocumentSubmission]
+    L -->|Guardian Task Type| M1[ApplicationApproval]
+    L -->|Guardian Task Type| M2[EcologicalProjectDocument]
+    L -->|Guardian Task Type| M3[EcologicalProjectApproval]
+```
+
 ## Current Progress and Needed Features
 
 This is the current progress for these policies as at 26/07/22.
