@@ -4,23 +4,14 @@
     "field1": "Matt's Farm",
     "field2": "This is a description about Matt's farm",
     "field3": "Matt Smithies",
-    "field4": {
-      "field0": "dovu.io",
-      "field1": "England",
-      "field2": "Micro"
-    },
-    "field5": {
-      "field0": "Same as above (field0 - Unique Identifier)",
-      "field1": "GeoJSON needed",
-      "field2": "Sequestion",
-      "field3": "Carbon Removal",
-      "field4": "N/A",
-      "field5": "N/A",
-      "field6": 0,
-      "field7": "N/A",
-      "field8": "Matt Smithies",
-      "field9": "DOVU",
-      "field10": "100"
-    }
+    "field4": "Ecological Project Info - Link to Project Data",
+    "field5": "Ecological Project Info - Country: The host country for the project",
+    "field6": "Ecological Project Info - Project Scale: One from the list of - Micro, Small, Medium, or Large",
+    "field7": "Modular Benefit Project - Unique identifier ",
+    "field8": "Modular Benefit Project - Geographic Location",
+    "field9": "Modular Benefit Project - Targeted Benefit Type",
+    "field10": "Modular Benefit Project - Developer(s)",
+    "field11": "Modular Benefit Project - Sponsor(s)",
+    "field12": "Modular Benefit Project - Claim Tokens"
   }
 }
